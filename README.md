@@ -34,12 +34,14 @@ To run this project, ensure the following are installed on your system:
 
 ### Step 2: Install Dependencies
 1. Run the following command to install the required dependencies.
-   - npm install
+   ```bash
+   npm install
 
 ## Running The Project
 1. Start the development server.
-   - npm run dev
-2. Open your browser and visit
+   ```bash
+   npm run dev
+3. Open your browser and visit
    - http://localhost:3000
 
 ## Platform Specific Instructions
