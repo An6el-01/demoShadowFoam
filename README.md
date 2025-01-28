@@ -50,27 +50,33 @@ To run this project, ensure the following are installed on your system:
 
 ### macOS
 1. Install Node.js using Homebrew:
-   - brew install node
-2. Install Git using Homebrew:
-   - brew install git
-3. Follow the **Installation** and **Running The Project** steps above.
+   ```bash
+    brew install node
+3. Install Git using Homebrew:
+   ```bash
+    brew install git
+5. Follow the **Installation** and **Running The Project** steps above.
 
 ### Linux
 1. Install Node.js
-   - sudo apt update
-   - sudo apt install -y node.js npm
-2. Install Git
-   - sudo apt install -y git
-3. Follow the **Installation** and **Running The Project** steps above.
+   ```bash
+   sudo apt update
+   sudo apt install -y node.js npm
+3. Install Git
+   ```bash
+   sudo apt install -y git
+5. Follow the **Installation** and **Running The Project** steps above.
 
 ## Troubleshooting
 
 ### Common Issues
 1. "Command Not Found" errors:
    - Ensure Node.js and Git are properly installed by running (Both should return numbers.):
-       - node -v
-       - git --version
+     ```bash
+       node -v
+       git --version
 2. Port already in use:
    - If port **3000** is in use, you can specify a different port when running the development server:
-       - npm run dev -- -p 30001
+     ```bash
+       npm run dev -- -p 30001
    
