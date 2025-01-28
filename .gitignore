@@ -1,7 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# dependencies
-/node_modules
+# Dependencies
+/node_modules/
 /.pnp
 .pnp.*
 .yarn/*
@@ -10,32 +10,76 @@
 !.yarn/releases
 !.yarn/versions
 
-# testing
+# Testing
 /coverage
 
-# next.js
+# Next.js
 /.next/
 /out/
+/.amp/
+/.next-static/
+/.next-cache/
 
-# production
+# Build Output
 /build
 
-# misc
-.DS_Store
-*.pem
+# Vercel
+.vercel
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
 
-# debug
+# Environment Files (opt-in for committing if needed)
+.env
+.env.*
+!.env.example
+
+# Production
+*.log
 npm-debug.log*
 yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
+pnpm-debug.log*
+*.pid
+*.seed
+*.pid.lock
 
-# env files (can opt-in for committing if needed)
-.env*
+# Local OS/IDE Config Files
+.DS_Store
+Thumbs.db
+.idea
+*.swp
+*.swo
+*.bak
 
-# vercel
-.vercel
-
-# typescript
+# TypeScript
 *.tsbuildinfo
 next-env.d.ts
+
+# Lockfiles
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Images and Cache
+/public/*.svg
+/public/assets/cache/
+__pycache__
+*.py[cod]
+
+# Miscellaneous
+*.pem
+*.key
+*.crt
+
+# Temporary Files
+*.tmp
+*.temp
+*.log
+*.bak
+
+# Coverage Files
+/lcov-report
+/coverage
+
+# Ignoring Storybook build output (if used)
+/storybook-static
